@@ -1,6 +1,8 @@
 fun main() {
-    var likes = 21
-    var result = if (likes % 2 === 0) println ("Понравилось $likes людям") else  println ("Понравилось $likes человеку")
+    var likes = 10121
+    var result = if (likes % 100 === 11) "людям"
+    else if (likes % 10 === 1) "человеку"
+    else  "людям"
 
-    println(result)
+    println("Понравилось: $likes $result")
 }
